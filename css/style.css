@@ -191,7 +191,7 @@ iframe{
   margin-right: auto;
 }
 
-/*Q19 19.	Style any <fieldset> element*/
+/*Q19 Style any <fieldset> element*/
 
 fieldset{
   width: 500px;
@@ -205,7 +205,7 @@ fieldset{
   border-style:double;
 }
 
-/*Q20: 20.	Style any <legend> element */
+/*Q20: Style any <legend> element */
 
 legend{
   font-style: italic;
