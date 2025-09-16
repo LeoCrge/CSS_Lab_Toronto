@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="..\html-lab-work\assets\img\su_banner.gif" alt="Banner">
+        
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Our services</a></li>          
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <main class="content">
+            <h2>Contact Us:</h2>
+
+            <fieldset>
+                <legend>Personal Information:</legend>
+                <label for="fname" >First Name:*</label>
+                <input type="text" id="fname" name="fname" maxlength="25">
+                <br><br>
+                <label for="lname">Last Name:*</label>
+                <input type="text" id="lname" name="lname" maxlength="25">
+                <br><br>
+                <label for="mail">Email:*</label>
+                <input type="text" id="mail" name="mail" maxlength="35">
+
+                 <p>Please select the music genre(s) that you like:</p>
+                <input type="checkbox" id="classic" name="genre" value="Classic">
+                <label for="classic">Classic</label><br>
+                
+                <input type="checkbox" id="jazz" name="genre" value="Jazz">
+                <label for="jazz">Jazz</label><br>
+                
+                <input type="checkbox" id="blues" name="genre" value="Blues">
+                <label for="blues">Blues</label><br>
+                
+                <input type="checkbox" id="instrumental" name="genre" value="Instrumental">
+                <label for="instrumental">Instrumental</label><br>
+
+            </fieldset>
+
+            <br><br>
+
+            <fieldset>
+                <legend>Your message:</legend>
+                <label for="hear">How did you hear about us?</label>
+                <select id="hear" name="hear">
+                    <option value="website">Our website</option>
+                    <option value="friend">Friends</option>
+                    <option value="ad">TV adv.</option>
+                    <option value="other">Other</option>
+                </select>
+                <br>
+
+                 <p>Would you recommend us to your friends?</p>
+                <input type="radio" id="yes" name="recommend" value="yes" checked>
+                <label for="yes">Yes</label>
+                
+                <input type="radio" id="no" name="recommend" value="no">
+                <label for="no">No</label>
+                
+                <input type="radio" id="maybe" name="recommend" value="maybe">
+                <label for="maybe">Maybe</label>
+                <br><br>
+                
+                <label for="request">Your request:</label><br>
+                <textarea id="request" name="request" rows="4" cols="40"></textarea>
+                <br><br>
+                
+                <input type="checkbox" id="updates" name="updates" checked>
+                <label for="updates">Sign me up for email updates</label>
+                <br><br>
+                
+                <input type="submit" value="Submit">
+            </fieldset>
+
+            <br><br>
+
+            <iframe 
+            src="https://www.google.com/maps?q=Spa+at+Four+Seasons+Toronto&hl=en&z=16&output=embed" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+        </main>
+
+        <footer>
+            <p>Copyright © 2023 ILAC and EFREI Paris - HTML-CSS major lab-work - created by: Léo Carouge - All rights reserved</p>
+        </footer>
+    
+    </div>   
+    
+</body>
+</html>
