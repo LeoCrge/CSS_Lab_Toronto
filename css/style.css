@@ -1,3 +1,240 @@
-table, th, td {
-  border: 1px solid black;
+/* Q#: All the elements have margin of 0 from the top, bottom, left, and right */ 
+* { 
+       margin: 0; 
+} 
+
+/* Q1: All the HTML5 new semantic elements that you have used in your code should be displayed as block-level elements */
+
+header,
+nav,
+main,
+h1,
+h2,
+h3,
+fieldset,
+legend,
+label,
+footer
+{
+  display: block;
 }
+
+/* Q2: The <body> element has to be styled */
+
+body{
+  color:rgb(26, 146, 159);
+  background-image: url("../assets/images/dark-wood.png");
+  background-position: center;
+  background-attachment: fixed;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+/* Q3: Style the <div> element with class “container”*/
+
+.container{
+  width:1100px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  background-color: rgb(255, 240, 208);
+}
+
+/* Q4: Style any element with class value of “content”*/
+
+.content{
+  line-height: 1.4em;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+}
+
+/* Q5: Style the “header, nav, and footer” */
+
+header,
+nav,
+footer{
+  background-color: #ffd195;
+  color:rgb(16, 94, 103)
+}
+
+/* Q6: Style the unordered list element <ul> which is inside <nav> element */
+
+nav ul{
+  margin:0;
+  padding: 5px;
+}
+
+/* Q7: Style the list items <li> of the main navigation (nav) */
+
+nav li{
+  display: inline-block;
+  margin-right: 40px;
+  text-transform: uppercase;
+}
+
+/* Q8: Add the 4 pseudo classes effect to the anchor tags/elements of the main navigation list items */
+
+nav li a:link {
+  color: #105e67;
+  text-decoration: none;
+}
+nav li a:visited {
+  color: #7a5c00;
+}
+nav li a:hover {
+  background-color: #ffe4b5;
+  color: #d2691e;
+}
+nav li a:active {
+  color: #ff0000;
+}
+
+/* Q9: Style any anchor <a> element */
+
+a{
+  color: #004d4d;
+  text-decoration: none;
+  
+}
+
+/* Q10: Style the three headings: h1, h2, and h3 */
+
+h1,
+h2,
+h3{
+  margin: 10px;
+  text-transform: uppercase;
+  color: #105e67;
+}
+
+/* Q11: Style the custom class named “img-centre” */
+
+.img-centre{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+/* Q12: Style the <audio> and <video> elements */
+
+video{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 13px;
+}
+
+/* Q13: Style any <table> element */
+
+table{
+  width: 800px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-collapse:separate;
+}
+
+/* Q14: Style both the <td> and <th> element of any table */
+
+td,
+th{
+  border: #7a5c00;
+  padding-top: 2px;  
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #eedca8;
+
+}
+
+/*Q15: Style both the <th> inside any table and the <td> inside the <tfoot> */
+
+th,
+tfoot td{
+  background-color: #7a5c00;
+  text-transform: uppercase;
+  color:#ffd898
+}
+
+/*Q16: Style any <dt> element */
+
+td{
+  font-weight: bold;
+}
+
+/*Q17 Style any <footer> element */
+
+footer{
+  font-size: 80%;
+  text-align: center;
+  padding-bottom: 1px;
+  padding-top: 1px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*Q18: Style any <iframe> element*/
+
+iframe{
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Q19 19.	Style any <fieldset> element*/
+
+fieldset{
+  width: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #105e67;
+  padding: 10px;
+  border-radius: 6px;
+  border-style:double;
+}
+
+/*Q20: 20.	Style any <legend> element */
+
+legend{
+  font-style: italic;
+  color:#105e67;
+  background-color:#ffd195;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 4px;
+}
+
+/*Q21	Style the <input> element that has an attribute named “type” with value of “submit”: */
+/*Q22 Style the same <input> element that has an attribute named “type” with value of “submit” but with the pseudo class for the hover state (when you hover the mouse over the element)*/
+fieldset{
+  input[type="submit"] {
+    border: #eedca8;
+    padding: 5px;
+    background-color:#ffd898;
+    border-radius: 4px;
+}
+input[type="submit"]:hover {
+  background-color: #ffd195;
+  color: #008080;
+  cursor: pointer;
+}
+}
+
